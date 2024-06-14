@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>cliente admision</title>
+    <link rel="stylesheet" href="css/cliente.css">
+<script>
+    function mensaje(){
+        alert("grabado satisfactoriamente");
+    }
+    function salir(){
+        alert("fin de registro");
+        window.close();
+    }
+
+</script>
+
+</head>
+<body>
+    <h1>registro de clientes</h1>
+    <form action="">
+        <table>
+            <tr>
+                <td>codigo</td>
+                <td>
+                    <input type="text" style="width: 30%" disabled value="c001" name="" id="">
+                </td>
+            </tr>
+            <tr>
+                <td>razon social</td>
+                <td>
+                    <input style="width: 70%" type="text" name="txtraz" placeholder="ingrese nombre de empresa">
+                </td>
+            </tr>
+            <tr>
+                <td>ruc</td>
+                <td>
+                    <input style="width: 50%" type="text" name="txtruc">
+                </td>
+            </tr>
+            <tr>
+                <td>direccion</td>
+                <td>
+                    <input style="width: 70%" type="text" name="txtdir" placeholder="ingrese direccion y referencia">
+                </td>
+            </tr>
+            <tr>
+                <td>distrito</td>
+                <td>
+                    <select name="txtdis" id="">
+                        <option value="1">villa maria</option>
+                        <option value="2">villa el salvador</option>
+                        <option value="3">lurin</option>
+                        <option value="4">san juan de miraflores</option>
+                        <option value="5">surco</option>
+                        <option value="6">surquillo</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>deuda</td>
+                <td>
+                    <input type="number" name="" id="">
+                </td>
+            </tr>
+            <tr>
+                <td>fecha-reg</td>
+                <td>
+                    <input type="date" name="" id="">
+                </td>
+            </tr>
+            <tr>
+                <td>contraseña</td>
+                <td>
+                    <input type="password" name="" id="">
+                </td>
+            </tr>
+            <tr>
+                <td>observasion</td>
+                <td>
+                    <textarea style="font-size: 20px" name="" id="" cols="60" rows="10"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>acta</td>
+                <td>
+                    <input type="file" name="" id="">
+                </td>
+            </tr>
+            <tr>
+                <td>correo</td>
+                <td>
+                    <input type="email" style="width: 100%">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button onclick="mensaje();">grabar</button>
+                </td>
+                <td style="text-align: right">
+                    <button onclick="salir();">cancelar</button>
+                </td>
+            </tr>
+        </table>
+    </form> 
+</body>
+</html>
